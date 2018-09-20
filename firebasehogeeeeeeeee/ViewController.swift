@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import UserNotifications
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, _ in
+                print("push permission finished")
+            }
+            //追加
+            User.anonymousLogin() { user in
+                print(user)
+            }
+        }
 
 }
 
