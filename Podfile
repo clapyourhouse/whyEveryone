@@ -8,4 +8,7 @@ target 'firebasehogeeeeeeeee' do
   # Pods for firebasehogeeeeeeeee
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
+  pod 'Firebase/Firestore'
+  pod 'Pring'
+  pod 'Firebase/Auth'
 end

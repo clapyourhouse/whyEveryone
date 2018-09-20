@@ -17,6 +17,10 @@ class ViewController: UIViewController {
             UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, _ in
                 print("push permission finished")
             }
+            //追加
+            User.anonymousLogin() { user in
+                print(user)
+            }
         }
 
 }

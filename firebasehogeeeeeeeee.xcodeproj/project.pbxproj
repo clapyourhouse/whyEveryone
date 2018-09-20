@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		46A35EC1303FF75F9553FDBF /* Pods_firebasehogeeeeeeeee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A530B09C3E795A2243B44A7 /* Pods_firebasehogeeeeeeeee.framework */; };
 		ED7B5BC72146230300D35326 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED7B5BC62146230300D35326 /* GoogleService-Info.plist */; };
+		EDDFEC9F214B8EE100F7D05B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDFEC9E214B8EE100F7D05B /* Model.swift */; };
 		FE6E538A2145462E00E0F7A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E53892145462E00E0F7A0 /* AppDelegate.swift */; };
 		FE6E538C2145462E00E0F7A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6E538B2145462E00E0F7A0 /* ViewController.swift */; };
 		FE6E538F2145462E00E0F7A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6E538D2145462E00E0F7A0 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		D13B547DE04B86B0A2D0973E /* Pods-firebasehogeeeeeeeee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebasehogeeeeeeeee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firebasehogeeeeeeeee/Pods-firebasehogeeeeeeeee.debug.xcconfig"; sourceTree = "<group>"; };
 		ED7B5BC62146230300D35326 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDCBFE52214A379300A1AD41 /* firebasehogeeeeeeeee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = firebasehogeeeeeeeee.entitlements; sourceTree = "<group>"; };
+		EDDFEC9E214B8EE100F7D05B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FE6E53862145462E00E0F7A0 /* firebasehogeeeeeeeee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebasehogeeeeeeeee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6E53892145462E00E0F7A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE6E538B2145462E00E0F7A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				FE6E53902145462E00E0F7A0 /* Assets.xcassets */,
 				FE6E53922145462E00E0F7A0 /* LaunchScreen.storyboard */,
 				FE6E53952145462E00E0F7A0 /* Info.plist */,
+				EDDFEC9E214B8EE100F7D05B /* Model.swift */,
 			);
 			path = firebasehogeeeeeeeee;
 			sourceTree = "<group>";
@@ -198,14 +201,28 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-firebasehogeeeeeeeee/Pods-firebasehogeeeeeeeee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDFEC9F214B8EE100F7D05B /* Model.swift in Sources */,
 				FE6E538C2145462E00E0F7A0 /* ViewController.swift in Sources */,
 				FE6E538A2145462E00E0F7A0 /* AppDelegate.swift in Sources */,
 			);
